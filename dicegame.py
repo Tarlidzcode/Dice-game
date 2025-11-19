@@ -11,7 +11,19 @@ def gameplay():
       PlayerScore=random.randint(min,max)
       ComputerScore=random.randint(min,max)
       print(f"You got {PlayerScore} vs CPU got {ComputerScore}")
-      break
+      if PlayerScore > ComputerScore :
+            print("Congratulations you win!!!")
+      
+      elif ComputerScore > PlayerScore:
+            print("Computer wins")
+            
+      else:
+            print("Its a draw")
+      
+      play_again = input("Play again? (yes/no):    ")
+      if play_again.lower() != 'yes':
+            break
     
     
+
 gameplay()
